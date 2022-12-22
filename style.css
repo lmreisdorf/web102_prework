@@ -18,9 +18,28 @@ body {
     margin-right: -10px;
     margin-top: -10px;
 }
+.welcome {
+    background-color: #a8b0bc;
+    border-radius: 7px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 50%;
+}
+#description-container {
+    font-size: 16px;
+}
 
 .stats-container {
     display: flex;
+    align-items: flex-start;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -33,7 +52,11 @@ body {
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+#cardTitle {
+    color: darkblue;
 }
 
 #games-container {
@@ -72,4 +95,17 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    width: 400px;
+    font-size: larger;
+    background-color: darkblue;
+    color: white;
+}
+
+button.selected-btn {
+background-color: white;
+color: darkblue;
+}
+
+button:hover {
+    cursor: pointer;
 }
